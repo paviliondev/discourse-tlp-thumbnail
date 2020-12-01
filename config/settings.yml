@@ -1,0 +1,3 @@
+plugins:
+  tlp_thumbnail_enabled:
+    default: true
