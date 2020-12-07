@@ -1,5 +1,5 @@
 <% content_for :head do %>
-    <% if !@topic_view.topic.image_url && @topic_view.topic.custom_fields['external_thumbnail_url'].present? %>
+    <% if @topic_view.topic.custom_fields['external_thumbnail_url'].present? %>
         <%= raw tag(:meta, property: "og:image", content: @topic_view.topic.custom_fields['external_thumbnail_url']) %>
     <% end %>
 <% end %>
