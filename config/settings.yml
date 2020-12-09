@@ -1,3 +1,6 @@
 plugins:
   tlp_thumbnail_enabled:
     default: true
+  tlp_thumbnail_random_image_url:
+    default: ""
+    client: true

@@ -1,0 +1,6 @@
+en:
+  js:
+    tlp_thumbnail:
+      labels:
+        random_image_enabled: "Enable Random Thumbnail Image Feature"
+        external_thumbnail_url: "External Thumbnail URL"
