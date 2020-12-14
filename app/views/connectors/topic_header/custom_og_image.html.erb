@@ -1,7 +1,0 @@
-<% content_for :head do %>
-    <% if @topic_view.topic.external_thumbnail_url.present? %>
-        <%= raw tag(:meta, property: "og:image", content: @topic_view.topic.external_thumbnail_url) %>
-    <% elsif  @topic_view.topic.random_image_enabled %>
-        <%= raw tag(:meta, property: "og:image", content: @topic_view.topic.tlp_thumbnail_random_image) %>
-    <% end %>
-<% end %>

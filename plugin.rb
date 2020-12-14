@@ -9,6 +9,8 @@
 enabled_site_setting :tlp_thumbnail_enabled
 
 after_initialize do
+  ::ActionController::Base.prepend_view_path File.expand_path("../app/views", __FILE__)
+
   register_topic_custom_field_type('external_thumbnail_url', :string)
   register_topic_custom_field_type('random_image_enabled', :boolean)
 
