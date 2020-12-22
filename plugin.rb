@@ -7,6 +7,7 @@
 # authors: Faizaan Gagan
 
 enabled_site_setting :tlp_thumbnail_enabled
+register_asset 'stylesheets/common.scss'
 
 after_initialize do
   ::ActionController::Base.prepend_view_path File.expand_path("../app/views", __FILE__)
