@@ -1,7 +1,7 @@
 <div class="topic-thumbnail">
   <a href='{{topic.url}}'>
     {{#if topic.external_thumbnail_url}}
-      {{previewThumbnail topic.external_thumbnail_url}}
+      {{previewThumbnail topic.external_thumbnail_url category=category opts=opts}}
     {{else}}
       {{preview-unbound thumbnails category=category opts=opts}}
     {{/if}}

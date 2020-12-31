@@ -1,8 +1,8 @@
 import { registerUnbound } from 'discourse-common/lib/helpers';
 
-registerUnbound("previewThumbnail", function (url, height, width) {
+registerUnbound("previewThumbnail", function (url, params) {
     return new Handlebars.SafeString(
-      renderThumbnailPreview(url, { opts: { tilesStyle: true } })
+      renderThumbnailPreview(url, params)
     );
 });
 
